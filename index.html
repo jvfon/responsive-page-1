@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Responsive Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
+    <header class="bg-light text-center">
         <p>Lorem, ipsum dolor.</p>
         <h1>Responsive layouts don't have to be a struggle</h1>
     </header>
     <section>
-        <h2>Quality Designs</h2>
+        <h2 class="text-center">Quality Designs</h2>
         <!-- 2 columns that need flexbox, class "split" created -->
         <div class="split">
             <div>
@@ -23,16 +27,26 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="bg-dark">
         <div class="split">
-            <div></div>
-            <div></div>
+            <div>
+                <h2>Made custom for you</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus expedita ea, perferendis neque eius.</p>
+            </div>
+            <div>
+                <img src="assests/pexels-valiphotos-589840.jpg" alt="Photo by Valiphotos: https://www.pexels.com/photo/tree-with-maple-leaves-589840/">
+            </div>
         </div>
     </section>
-    <section>
+    <section class="bg-accent">
         <div class="split">
-            <div></div>
-            <div></div>
+            <div>
+                <img src="assests/pexels-craig-adderley-1563356.jpg" alt="Photo by Craig Adderley: https://www.pexels.com/photo/concrete-road-between-trees-1563356/">
+            </div>
+            <div>
+                <h2>Created with care</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus expedita ea, perferendis neque eius.</p>
+            </div>
         </div>
     </section>
 </body>
