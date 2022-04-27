@@ -35,6 +35,15 @@ h1, h2, h3 {
     line-height: 1;
 }
 
+h2,h3,p {
+    margin-bottom: 1em;
+}
+
+img {
+    display: block; /* on large screens, the image won't stretch and will shrink if the area is too small */
+    max-width: 100%;
+}
+
 .text-center {
     text-align: center;
 }
