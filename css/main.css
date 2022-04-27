@@ -39,6 +39,11 @@ section {
     padding: 3rem 0;
 }
 
+.container {
+    margin-inline: auto; /*only left and right margins, margin-block is top and bottom*/
+    width: min(90%, 70.5rem); /* min width is set to 90% and max width to 70.5rem*/
+}
+
 .bg-light {
     background-color: var(--clr-primary-200);
 }
