@@ -30,12 +30,13 @@ body, h1, h2, h3, p {
 }
 
 h1, h2, h3 {
+    color: var(--clr-primary-400);
     font-family: var(--ff-accent);
     font-weight: 900;
     line-height: 1;
 }
 
-h2,h3,p {
+h2, h3, p {
     margin-bottom: 1em;
 }
 
@@ -49,12 +50,41 @@ img {
 }
 
 header, section {
-    padding: 3rem 0;
+    padding: 4rem 0;
+}
+
+/* on larger screens there will be a larger space between elements */
+@media (min-width: 40em) {
+    header, section {
+        padding: 7rem 0;
+    }
 }
 
 .container {
     margin-inline: auto; /*only left and right margins, margin-block is top and bottom*/
     width: min(90%, 70.5rem); /* min width is set to 90% and max width to 70.5rem*/
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40rem) {
+    .split {
+        flex-direction: row;
+    }
+    /*for equal columns*/
+    /* all direct children of split will have flex basis of 100% */
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    /* every element that has a sibling before it will have a 2em space between them */
+    /* if this selector is outside the media query, a 2em extra margin will show up when the screen is small */
+    .split > * + * {
+        margin-left: 2em;
+    }
 }
 
 .container--narrow {
